@@ -51,10 +51,10 @@ const Landing = () => {
                 sx={{ my: 4, display: {sm: "flex", xs: "none"} }}
               >
                 <Link href="/donation">
-                  <Button color="error" size="large" variant="contained" disableElevation={true} disableRipple={true} >Támogatom</Button>
+                  <Button color="error" size="large" variant="contained" disableElevation={true} disableRipple={true}  >Támogatom</Button>
                 </Link>
                 <Link href="/about">
-                  <Button color="error" size="large" variant="outlined" disableElevation={true} disableRipple={true}>Alapítványunkról</Button>
+                  <Button color="error" size="large" variant="outlined" disableElevation={true} disableRipple={true} >Alapítványunkról</Button>
                 </Link>
               </Stack>
               <Stack
@@ -64,8 +64,12 @@ const Landing = () => {
                 spacing={2}
                 sx={{ my: 4, display: {sm: "none", xs: "flex"} }}
                 >
-                <Button color="error" size="" variant="contained" disableElevation={true} disableRipple={true} >Adományozás</Button>
-                <Button color="error" size="" variant="outlined" disableElevation={true} disableRipple={true}>Alapítványunkról</Button>
+                <Link href="/donation">
+                  <Button color="error" size="" variant="contained" disableElevation={true} disableRipple={true}  >Támogatom</Button>
+                </Link>
+                <Link href="/about">
+                  <Button color="error" size="" variant="outlined" disableElevation={true} disableRipple={true} >Alapítványunkról</Button>
+                </Link>
               </Stack>
             </Stack>
           </Grid>
